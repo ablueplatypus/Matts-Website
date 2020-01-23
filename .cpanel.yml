@@ -2,6 +2,7 @@
   deployment:
     tasks:
       - export DEPLOYPATH=/home/mattsqwj/public_html
+      - export DEPLOYPATH=/home/mattsqwj/mattdoering.pizza
       - /bin/cp index.html $DEPLOYPATH
       - /bin/cp -R assets $DEPLOYPATH
       - /bin/cp -R images $DEPLOYPATH
