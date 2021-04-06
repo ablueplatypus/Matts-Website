@@ -6,4 +6,4 @@
       - /bin/cp index.html $DEPLOYPATH
       - /bin/cp -R assets $DEPLOYPATH
       - /bin/cp -R images $DEPLOYPATH
-      - /bin/cp matts_resume_2020.pdf $DEPLOYPATH
+      - /bin/cp matts_resume_2021.pdf $DEPLOYPATH
