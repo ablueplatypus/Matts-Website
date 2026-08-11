@@ -11,6 +11,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/matts_logo_white.png" />
+		<style>
+    /* Targeting ONLY the phone input */
+    #phone {
+        position: relative;
+        -webkit-appearance: none;
+        display: block;
+        border: 0;
+        outline: 0;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.75);
+        width: 163% !important; /* Force it to stay within its container */
+        border-radius: 0.35em;
+        padding: 0.75em 1em;
+        box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+    .actions{
+        list-style-type: none
+    }
+    </style>
+		
+		<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '505785861978734');
+fbq('track', 'PageView');
+fbq('track', 'CustomEvent', {
+  event_name: 'Button Click'
+ });
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=505785861978734&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 	</head>
 	<body class="is-preload">
 
@@ -62,8 +108,8 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hello, Welcome to my website!</h2>
-								<p>Matt is a full stack web developer living in Astoria.<br />
+								<h2 class="alt"><span class="shimmer" style="--index:0">H</span><span class="shimmer" style="--index:1">e</span><span class="shimmer" style="--index:2">l</span><span class="shimmer" style="--index:3">l</span><span class="shimmer" style="--index:4">o</span><span class="shimmer" style="--index:5">,</span><span class="shimmer" style="--index:6"> </span><span class="shimmer" style="--index:7">&nbsp;W</span><span class="shimmer" style="--index:8">e</span><span class="shimmer" style="--index:9">l</span><span class="shimmer" style="--index:10">c</span><span class="shimmer" style="--index:11">o</span><span class="shimmer" style="--index:12">m</span><span class="shimmer" style="--index:13">e</span><span class="shimmer" style="--index:14"> </span><span class="shimmer" style="--index:15">&nbsp;t</span><span class="shimmer" style="--index:16">o</span><span class="shimmer" style="--index:17"> </span><span class="shimmer" style="--index:18">&nbsp;m</span><span class="shimmer" style="--index:19">y</span><span class="shimmer" style="--index:20"> </span><span class="shimmer" style="--index:21">&nbsp;w</span><span class="shimmer" style="--index:22">e</span><span class="shimmer" style="--index:23">b</span><span class="shimmer" style="--index:24">s</span><span class="shimmer" style="--index:25">i</span><span class="shimmer" style="--index:26">t</span><span class="shimmer" style="--index:27">e</span><span class="shimmer" style="--index:28">!</span></h2>
+								<p>Matt is a full stack web developer living in Charleston South Carolina.<br />
 									This banner photo was captured in Seattle Washington at Hurricane Ridge!
 								</p>
 							</header>
@@ -84,7 +130,7 @@
 							</header>
 
 							<p>The following are projects that I created during my time at Flatiron School.
-								My most recent and favorite project is a Tetris inspired game called drop-a-block.
+								Out side of work a favorite project I have is a Tetris inspired game called drop-a-block.
 								This has been hosted on Heroku, please give the site a moment to load when you click on the link.
 								I hope you enjoy taking a tour of my projects. Please checkback for updates and improvements.
 							</p>
@@ -106,18 +152,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://drop-a-block-frontend.herokuapp.com/" target="_blank" class="image fit"><img src="images/drop_a_block.png" alt="" /></a>
+										<a href="https://drop-a-block-vi4c.onrender.com/" target="_blank" class="image fit"><img src="images/drop_a_block.png" alt="" /></a>
 										<header>
 											<h3>Drop A Block</h3>
 										</header>
 									</article>
 									
-									<article class="item">
-										<a href="https://specialtybuildingsolutions.net/" target=_"blank" class="image fit"><img src="images/sbs_website.png" alt="" /></a>
-										<header>
-											<h3>Specialty Building Solutions</h3>
-										</header>
-									</article>
+								
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
@@ -141,10 +182,10 @@
 								<h2>About Me</h2>
 							</header>
 							<a href="#" class="image featured"><img src="images/ireland_doering_cover.jpg" alt="A beautiful sunset with 400 foot cliffs above the Atlantic Ocean, located at the Cliffs of Moher in Ireland">Photo taken in Ireland at the Cliffs of Moher</a>
-							<p>I am a full stack web developer with experience in Ruby on Rails, JavaScript and React.
-								 My affection for web development is strongly tied to my professional background
-								 in finance as well as a long family history in the restaurant business.
-								 If you find yourself in Ocean Beach Fire Island stop into <a href="http://www.rachelsfireisland.com/">Rachel's</a> for a cookie and say hi!
+							<p>I am a full stack web developer turned Solutions Engineer with experience in JavaScript and React & some Ruby on Rails.
+								 My affection for web development is strongly tied to my professional background. 
+								Working three years at a Sass startup at <a href="https://www.kustomer.com/" target="_blank">Kustomer</a> which was acquired by <a href="https://about.fb.com/news/2020/11/kustomer-to-join-facebook/" target="_blank">Meta</a> in 2022 and divested in 2023 from Meta.
+								I also have a long family history in the restaurant business which truley shapped my work ethic and love for a great conversation. If you find yourself in Ocean Beach Fire Island stop into <a href="http://www.rachelsfireisland.com/" target="_blank">Rachel's</a> for a cookie and say hi!
 							</p>
 
 						</div>
@@ -154,7 +195,7 @@
 							<div class="container">
 								<header id="reslink">
 									<h2>
-									<a href="matts_resume_2021.pdf" target="_blank">
+									<a href="matts_resume_2025_CW.pdf" target="_blank">
 										Resume
 									</a>
 									</h2>
@@ -176,18 +217,42 @@
 								Make it a great day!
 							</p>
 
-							<form method="post" action="https://formspree.io/mattdoering86@gmail.com">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+                        <form method="post" action="https://formspree.io/mattdoering86@gmail.com">
+    <div class="row gtr-uniform">
+        <div class="col-6 col-12-mobile">
+            <input type="text" name="name" id="name" placeholder="Name" required />
+        </div>
+        <div class="col-6 col-12-mobile">
+            <input type="email" name="email" id="email" placeholder="Email" required />
+        </div>
+        
+        <div class="col-12-mobile">
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number (e.g. +1 555-000-0000)" />
+        </div>
+
+        <div class="col-12">
+            <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+        </div>
+
+        <div class="col-12">
+            <div style="display: flex; align-items: flex-start; margin-top: 10px;">
+                <input type="checkbox" id="sms_opt_in" name="sms_opt_in" value="yes" 
+                       style="display: inline-block !important; opacity: 1 !important; width: 20px !important; height: 20px !important; margin-right: 12px !important; appearance: checkbox !important; -webkit-appearance: checkbox !important;">
+                
+                <label for="sms_opt_in" style="font-size: 0.9em; line-height: 1.4; text-transform: none; letter-spacing: 0; font-weight: normal; color: #666;">
+                    I agree to receive automated text messages from Matt for booking reminders and security codes. 
+                    <br><span style="font-size: 0.8em; opacity: 0.8;">Msg & data rates may apply. Reply STOP to opt out.</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary" /></li>
+            </ul>
+        </div>
+    </div>
+</form>
 
 						</div>
 					</section>
@@ -200,6 +265,9 @@
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Matthew Doering - All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="Privacy.html" target="_blank" >Privacy Policy</a></li>
+						<li><a href="T&C.html" target="_blank">Terms & Conditions</a></li>
+						
 					</ul>
 
 			</div>
@@ -212,6 +280,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+  document.getElementById('pre-order-button').addEventListener('click', function() {
+    fbq('track', 'CustomEvent', {
+      'event_name': 'Button Click'
+    });
+  });
+</script>
 
 	</body>
 </html>
