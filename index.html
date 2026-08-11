@@ -234,17 +234,17 @@ src="https://www.facebook.com/tr?id=505785861978734&ev=PageView&noscript=1"
             <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
         </div>
 
-        <div class="col-12">
-            <div style="display: flex; align-items: flex-start; margin-top: 10px;">
-                <input type="checkbox" id="sms_opt_in" name="sms_opt_in" value="yes" 
-                       style="display: inline-block !important; opacity: 1 !important; width: 20px !important; height: 20px !important; margin-right: 12px !important; appearance: checkbox !important; -webkit-appearance: checkbox !important;">
-                
-                <label for="sms_opt_in" style="font-size: 0.9em; line-height: 1.4; text-transform: none; letter-spacing: 0; font-weight: normal; color: #666;">
-                    I agree to receive automated text messages from Matt for booking reminders and security codes. 
-                    <br><span style="font-size: 0.8em; opacity: 0.8;">Msg & data rates may apply. Reply STOP to opt out.</span>
-                </label>
-            </div>
-        </div>
+     <div class="col-12">
+    	<div class="sms-opt-in-wrapper">
+        	<input type="checkbox" id="sms_opt_in" name="sms_opt_in" value="yes" class="sms-opt-in-checkbox">
+        
+        	<label for="sms_opt_in" class="sms-opt-in-label">
+            	I agree to receive automated text messages from Matt for booking reminders and security codes. 
+            	<br>
+            	<span class="sms-opt-in-subtext">Msg & data rates may apply. Reply STOP to opt out.</span>
+        	</label>
+    	</div>
+	</div>
 
         <div class="col-12">
             <ul class="actions">
