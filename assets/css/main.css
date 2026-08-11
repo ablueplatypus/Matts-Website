@@ -89,7 +89,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #d4d5d7;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -113,7 +113,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #d4d5d7;
 		line-height: 1.5em;
 	}
 
@@ -1845,6 +1845,10 @@ input, select, textarea {
 		margin-bottom: 0.5em;
 	}
 
+	#main form label {
+		color: #d4d5d7;
+	}
+
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
@@ -1907,6 +1911,40 @@ input, select, textarea {
 	form ::-moz-focus-inner {
 		border: 0;
 	}
+
+	/* SMS Opt-In Container */
+.sms-opt-in-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* SMS Checkbox (Specific Selector Overrides Base Styles) */
+#main form input[type="checkbox"].sms-opt-in-checkbox {
+    display: inline-block;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    appearance: checkbox;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+}
+
+/* SMS Label & Subtext */
+#main form .sms-opt-in-label {
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+    color: #d4d5d7;
+}
+
+#main form .sms-opt-in-subtext {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
 
 /* Table */
 
@@ -2217,7 +2255,7 @@ button:hover,
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #667083;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2292,15 +2330,15 @@ button:hover,
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #667083;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #667083;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #667083;
 			}
 
 
